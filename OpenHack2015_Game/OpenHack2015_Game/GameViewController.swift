@@ -105,10 +105,11 @@ class GameViewController: UIViewController {
         }
     }
     
-    class Player
+    class Player{
     // initiate coordinates
     var corX: Int
     var corY: Int
+    }
     
     // movement
     

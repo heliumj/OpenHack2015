@@ -13,7 +13,6 @@ class GameScene: SKScene {
         self.scaleMode = .ResizeFill
         
         // Draw the board
-        drawBoard()
         // Add a game piece to the board
         /* if let square = squareWithName("a1") {
             let gamePiece = SKSpriteNode(imageNamed: "Spaceship")
@@ -62,5 +61,6 @@ class GameScene: SKScene {
     }   
     override func update(currentTime: CFTimeInterval) {
         /* Called before each frame is rendered */
+        drawBoard()
     }
 }
