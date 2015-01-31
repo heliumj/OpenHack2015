@@ -104,5 +104,9 @@ class GameViewController: UIViewController {
             }
         }
     }
+    // movement
+    
+    func moveRight (){
+    }
 }
 
