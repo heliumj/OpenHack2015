@@ -106,6 +106,7 @@
                     <connections>
                         <outlet property="boardView" destination="iHx-PL-dSC" id="tzf-EX-En2"/>
                         <outlet property="turnsLabel" destination="LaS-mm-aKh" id="ZXl-hQ-9fr"/>
+                        <segue destination="Bdt-Iy-Ixw" kind="show" identifier="nextView" id="HHJ-hv-nn0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -115,7 +116,7 @@
         <!--View Controller-->
         <scene sceneID="cvT-t0-qih">
             <objects>
-                <viewController id="Bdt-Iy-Ixw" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="result" id="Bdt-Iy-Ixw" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bp9-zn-3qS"/>
                         <viewControllerLayoutGuide type="bottom" id="LRr-1i-hId"/>
@@ -124,9 +125,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.59999999999999964" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background.png" translatesAutoresizingMaskIntoConstraints="NO" id="r8r-uU-RgZ">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Game Over!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTH-r9-lsA">
                                 <rect key="frame" x="263" y="53" width="92" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -145,6 +143,9 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" alpha="0.59999999999999964" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background.png" translatesAutoresizingMaskIntoConstraints="NO" id="r8r-uU-RgZ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

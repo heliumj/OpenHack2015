@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8C21995D1A7CF448009CBE6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C21995C1A7CF448009CBE6B /* AppDelegate.swift */; };
-		8C2199621A7CF448009CBE6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C2199601A7CF448009CBE6B /* Main.storyboard */; };
 		8C2199641A7CF448009CBE6B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C2199631A7CF448009CBE6B /* Images.xcassets */; };
 		8C2199671A7CF448009CBE6B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C2199651A7CF448009CBE6B /* LaunchScreen.xib */; };
 		8C2199731A7CF448009CBE6B /* OpenHackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2199721A7CF448009CBE6B /* OpenHackTests.swift */; };
@@ -19,6 +18,7 @@
 		8C69E94D1A7CF641006BD6E3 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C69E94C1A7CF641006BD6E3 /* Player.swift */; };
 		F6209FE51A7D3213006D9355 /* Grid.png in Resources */ = {isa = PBXBuildFile; fileRef = F6209FE41A7D3213006D9355 /* Grid.png */; };
 		F6209FE71A7D3681006D9355 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = F6209FE61A7D3681006D9355 /* Background.png */; };
+		F6209FEB1A7D5053006D9355 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6209FEA1A7D5053006D9355 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +35,6 @@
 		8C2199571A7CF448009CBE6B /* OpenHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C21995B1A7CF448009CBE6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C21995C1A7CF448009CBE6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8C2199611A7CF448009CBE6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8C2199631A7CF448009CBE6B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8C2199661A7CF448009CBE6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		8C21996C1A7CF448009CBE6B /* OpenHackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenHackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +47,7 @@
 		8C69E94C1A7CF641006BD6E3 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		F6209FE41A7D3213006D9355 /* Grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Grid.png; path = ../../../../../Grid.png; sourceTree = "<group>"; };
 		F6209FE61A7D3681006D9355 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Background.png; path = ../../../../../Background.png; sourceTree = "<group>"; };
+		F6209FEA1A7D5053006D9355 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,14 +92,14 @@
 				8C21995C1A7CF448009CBE6B /* AppDelegate.swift */,
 				8C69E94C1A7CF641006BD6E3 /* Player.swift */,
 				8C21997C1A7CF464009CBE6B /* Board.swift */,
-				8C2199601A7CF448009CBE6B /* Main.storyboard */,
 				8C2199821A7CF47E009CBE6B /* ViewController.swift */,
-				F6209FE61A7D3681006D9355 /* Background.png */,
-				F6209FE41A7D3213006D9355 /* Grid.png */,
 				8C21997E1A7CF46B009CBE6B /* Square.swift */,
+				F6209FEA1A7D5053006D9355 /* Main.storyboard */,
 				8C2199801A7CF46F009CBE6B /* SquareLabel.swift */,
 				8C2199631A7CF448009CBE6B /* Images.xcassets */,
 				8C2199651A7CF448009CBE6B /* LaunchScreen.xib */,
+				F6209FE61A7D3681006D9355 /* Background.png */,
+				F6209FE41A7D3213006D9355 /* Grid.png */,
 				8C21995A1A7CF448009CBE6B /* Supporting Files */,
 			);
 			path = OpenHack;
@@ -210,9 +210,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C2199621A7CF448009CBE6B /* Main.storyboard in Resources */,
 				F6209FE51A7D3213006D9355 /* Grid.png in Resources */,
 				F6209FE71A7D3681006D9355 /* Background.png in Resources */,
+				F6209FEB1A7D5053006D9355 /* Main.storyboard in Resources */,
 				8C2199671A7CF448009CBE6B /* LaunchScreen.xib in Resources */,
 				8C2199641A7CF448009CBE6B /* Images.xcassets in Resources */,
 			);
@@ -260,14 +260,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8C2199601A7CF448009CBE6B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8C2199611A7CF448009CBE6B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8C2199651A7CF448009CBE6B /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (

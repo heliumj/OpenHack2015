@@ -19,7 +19,10 @@ class ViewController: UIViewController {
     
     var turns:Int = 0 {
         didSet {
-            if (turns % 2 == 1) {
+            if (turns == 30) {
+                gameOver()
+            }
+            else if (turns % 2 == 1) {
                 self.turnsLabel.text = "Player 1 Turn: \((turns + 1) / 2)"
             }
             else {
@@ -204,56 +207,16 @@ class ViewController: UIViewController {
             self.presentViewController(alert, animated: true, completion: nil)
         }
     }
-    
-    // time up
-    func timeUp () {
-        
-        if (turns >= 30) {
-        // player 2 (runner) wins
-        var alert = UIAlertController(title: "Time up!", message: "Player 2 wins", preferredStyle: UIAlertControllerStyle.Alert)
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-        self.presentViewController(alert, animated: true, completion: nil)
-            
-        pause()
-}
-    }
 
     func gameOver() {
         //alert
-
-        var alert = UIAlertController(title: "Game over", message: "Player 1 wins", preferredStyle: UIAlertControllerStyle.Alert)
+        /* var alert = UIAlertController(title: "Game over", message: "Click to continune", preferredStyle: UIAlertControllerStyle.Alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-        self.presentViewController(alert, animated: true, completion: nil)
+        self.presentViewController(alert, animated: true, completion: nil) */
+        performSegueWithIdentifier("nextView", sender: self)
+
 
     }
 
-    
-    //MARK: Button Actions
-    
-//    @IBAction func newGamePressed() {
-//        println("new game")
-//        self.startNewGame()
-//    }
-//    
-//    func squareLabelPressed(sender: SquareLabel) {
-//        //        println("Pressed row:\(sender.square.row), col:\(sender.square.col)")
-//        //        sender.setTitle("", forState: .Normal)
-//        
-//        if !sender.square.isRevealed {
-//            sender.square.isRevealed = true
-//            sender.setTitle("\(sender.getLabelText())", forState: .Normal)
-//            self.turns++
-//        }
-//        
-//        if sender.square.isMineLocation {
-//            self.minePressed()
-//        }
-//    }
-    
-//    func alertView(View: UIAlertView!, clickedButtonAtIndex buttonIndex: Int) {
-//        //start new game when the alert is dismissed
-//        self.startNewGame()
-//    }
-//
 }
 
