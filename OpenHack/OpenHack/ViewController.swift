@@ -143,7 +143,9 @@ class ViewController: UIViewController {
     }
     
     func gameOver() {
-    
+        //alert
+        self.startNewGame()
+
     }
 
     
@@ -169,14 +171,10 @@ class ViewController: UIViewController {
 //        }
 //    }
     
-
-    
 //    func alertView(View: UIAlertView!, clickedButtonAtIndex buttonIndex: Int) {
 //        //start new game when the alert is dismissed
 //        self.startNewGame()
 //    }
-    
-    
-    
+//
 }
 
