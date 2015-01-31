@@ -75,7 +75,7 @@ class ViewController: UIViewController {
     func startNewGame(){
         // Initialize Players
         let player1 = Player(row:0, col:0)
-        let player2 = Player(row:board.size, col:board.size)
+        let player2 = Player(row:board.size-1, col:board.size-1)
         players.append(player1)
         players.append(player2)
 
@@ -96,18 +96,72 @@ class ViewController: UIViewController {
             self.squareLabels[Another].setTitle(" * ", forState: .Normal)
 
         }
+        
         self.squareLabels[(players[turns%2].row+players[turns%2].col*board.size)].setTitle(" O ", forState: .Normal)
     }
     
     func takeTurn(){
         updateBoard();
         // wait for swipe
+        // swipe
+        var swipeRight = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")
+        swipeRight.direction = UISwipeGestureRecognizerDirection.Right
+        self.view.addGestureRecognizer(swipeRight)
+        
+        var swipeDown = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")
+        swipeDown.direction = UISwipeGestureRecognizerDirection.Down
+        self.view.addGestureRecognizer(swipeDown)
+        
+        var swipeLeft = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")
+        swipeLeft.direction = UISwipeGestureRecognizerDirection.Left
+        self.view.addGestureRecognizer(swipeLeft)
+        
+        var swipeUp = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")
+        swipeUp.direction = UISwipeGestureRecognizerDirection.Up
+        self.view.addGestureRecognizer(swipeUp)
     }
-    
-    //four swipe input handler with boundry check
-    
-    // decide who's turn and call the corresponding move
 
+    func respondToSwipeGesture(gesture: UIGestureRecognizer) {
+        
+        if let swipeGesture = gesture as? UISwipeGestureRecognizer {
+            
+            let player = players[turns%2]
+            switch swipeGesture.direction {
+            case UISwipeGestureRecognizerDirection.Right:
+                if (player.row<board.size-1) {
+                    player.moveRight()
+                } else {
+                    //alert
+                    return
+                }
+            case UISwipeGestureRecognizerDirection.Left:
+                if (player.row>0) {
+                    player.moveLeft()
+                }  else {
+                    //alert
+                    return
+                }
+            case UISwipeGestureRecognizerDirection.Up:
+                if (player.col>0) {
+                    player.moveUp()
+                }  else {
+                    //alert
+                    return
+                }
+            case UISwipeGestureRecognizerDirection.Down:
+                if (player.col<board.size-1) {
+                    player.moveDown()
+                }  else {
+                    //alert
+                    return
+                }
+            default:
+                break
+            }
+            
+            OnSwiped();
+        }
+    }
     
     func OnSwiped() {
         //player.Move();
@@ -144,8 +198,7 @@ class ViewController: UIViewController {
     
     func gameOver() {
         //alert
-        self.startNewGame()
-
+        pause()
     }
 
     
