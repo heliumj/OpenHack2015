@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var helpLabel: UILabel!
     @IBOutlet weak var boardView: UIView!
     @IBOutlet weak var turnsLabel: UILabel!
     
@@ -19,10 +20,7 @@ class ViewController: UIViewController {
     
     var turns:Int = 0 {
         didSet {
-            if (turns == 30) {
-                gameOver()
-            }
-            else if (turns % 2 == 1) {
+            if (turns % 2 == 1) {
                 self.turnsLabel.text = "Player 1 Turn: \((turns + 1) / 2)"
             }
             else {
@@ -198,14 +196,24 @@ class ViewController: UIViewController {
         let colDistance = abs(players[0].col - players[1].col)
         let distance = rowDistance + colDistance
 
-        if (distance == 0){
+        /* if (distance == 0 || (turns == 30)){
+            gameOver() */
+        if (distance == 0) {
+            self.helpLabel.text = "Player 1 wins!"
             gameOver()
-        } else {
+        }
+        else if (turns == 30) {
+            self.helpLabel.text = "Player 2 wins!"
+            gameOver()
+        }
+        else {
             //alert for distance
             var alert = UIAlertController(title: "Distance", message: "\(distance)", preferredStyle: UIAlertControllerStyle.Alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
             self.presentViewController(alert, animated: true, completion: nil)
         }
+        
+
     }
 
     func gameOver() {
@@ -214,9 +222,17 @@ class ViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
         self.presentViewController(alert, animated: true, completion: nil) */
         performSegueWithIdentifier("nextView", sender: self)
-
-
     }
 
-}
+    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+        if (segue.identifier == "nextView") {
+            //get reference
+            var svc = segue!.destinationViewController as LastViewController;
+            
+            svc.toPass = helpLabel.text
+            
+        }
+    }
+
+   }
 

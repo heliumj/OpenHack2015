@@ -19,6 +19,7 @@
 		F6209FE51A7D3213006D9355 /* Grid.png in Resources */ = {isa = PBXBuildFile; fileRef = F6209FE41A7D3213006D9355 /* Grid.png */; };
 		F6209FE71A7D3681006D9355 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = F6209FE61A7D3681006D9355 /* Background.png */; };
 		F6209FEB1A7D5053006D9355 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6209FEA1A7D5053006D9355 /* Main.storyboard */; };
+		F6209FEF1A7D6122006D9355 /* LastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6209FEE1A7D6122006D9355 /* LastViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		F6209FE41A7D3213006D9355 /* Grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Grid.png; path = ../../../../../Grid.png; sourceTree = "<group>"; };
 		F6209FE61A7D3681006D9355 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Background.png; path = ../../../../../Background.png; sourceTree = "<group>"; };
 		F6209FEA1A7D5053006D9355 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F6209FEE1A7D6122006D9355 /* LastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LastViewController.swift; sourceTree = "<group>"; usesTabs = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,12 +94,13 @@
 				8C21995C1A7CF448009CBE6B /* AppDelegate.swift */,
 				8C69E94C1A7CF641006BD6E3 /* Player.swift */,
 				8C21997C1A7CF464009CBE6B /* Board.swift */,
-				8C2199821A7CF47E009CBE6B /* ViewController.swift */,
 				8C21997E1A7CF46B009CBE6B /* Square.swift */,
-				F6209FEA1A7D5053006D9355 /* Main.storyboard */,
 				8C2199801A7CF46F009CBE6B /* SquareLabel.swift */,
-				8C2199631A7CF448009CBE6B /* Images.xcassets */,
 				8C2199651A7CF448009CBE6B /* LaunchScreen.xib */,
+				F6209FEA1A7D5053006D9355 /* Main.storyboard */,
+				8C2199821A7CF47E009CBE6B /* ViewController.swift */,
+				F6209FEE1A7D6122006D9355 /* LastViewController.swift */,
+				8C2199631A7CF448009CBE6B /* Images.xcassets */,
 				F6209FE61A7D3681006D9355 /* Background.png */,
 				F6209FE41A7D3213006D9355 /* Grid.png */,
 				8C21995A1A7CF448009CBE6B /* Supporting Files */,
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C2199831A7CF47E009CBE6B /* ViewController.swift in Sources */,
+				F6209FEF1A7D6122006D9355 /* LastViewController.swift in Sources */,
 				8C21997F1A7CF46B009CBE6B /* Square.swift in Sources */,
 				8C21995D1A7CF448009CBE6B /* AppDelegate.swift in Sources */,
 				8C2199811A7CF46F009CBE6B /* SquareLabel.swift in Sources */,
