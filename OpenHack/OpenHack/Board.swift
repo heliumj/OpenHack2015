@@ -26,40 +26,40 @@ class Board {
         }
     }
     
-    func resetBoard() {
-        // assign mines to squares
-        for row in 0 ..< size {
-            for col in 0 ..< size {
-                squares[row][col].isRevealed = false
-                self.calculateIsMineLocationForSquare(squares[row][col])
-            }
-        }
-        
-        // count number of neighboring squares
-        for row in 0 ..< size {
-            for col in 0 ..< size {
-                self.calculateNumNeighborMinesForSquare(squares[row][col])
-            }
-        }
-    }
+//    func resetBoard() {
+//        // assign mines to squares
+//        for row in 0 ..< size {
+//            for col in 0 ..< size {
+//                squares[row][col].isRevealed = false
+//                self.calculateIsMineLocationForSquare(squares[row][col])
+//            }
+//        }
+//        
+//        // count number of neighboring squares
+//        for row in 0 ..< size {
+//            for col in 0 ..< size {
+//                self.calculateNumNeighborMinesForSquare(squares[row][col])
+//            }
+//        }
+//    }
     
-    func calculateIsMineLocationForSquare(square: Square) {
-        square.isMineLocation = ((arc4random()%10) == 0) // 1-in-10 chance that each location contains a mine
-    }
-    
-    func calculateNumNeighborMinesForSquare(square : Square) {
-        // first get a list of adjacent squares
-        let neighbors = getNeighboringSquares(square)
-        var numNeighboringMines = 0
-        
-        // for each neighbor with a mine, add 1 to this square's count
-        for neighborSquare in neighbors {
-            if neighborSquare.isMineLocation {
-                numNeighboringMines++
-            }
-        }
-        square.numNeighboringMines = numNeighboringMines
-    }
+//    func calculateIsMineLocationForSquare(square: Square) {
+//        square.isMineLocation = ((arc4random()%10) == 0) // 1-in-10 chance that each location contains a mine
+//    }
+//    
+//    func calculateNumNeighborMinesForSquare(square : Square) {
+//        // first get a list of adjacent squares
+//        let neighbors = getNeighboringSquares(square)
+//        var numNeighboringMines = 0
+//        
+//        // for each neighbor with a mine, add 1 to this square's count
+//        for neighborSquare in neighbors {
+//            if neighborSquare.isMineLocation {
+//                numNeighboringMines++
+//            }
+//        }
+//        square.numNeighboringMines = numNeighboringMines
+//    }
     
     func getNeighboringSquares(square : Square) -> [Square] {
         var neighbors:[Square] = []

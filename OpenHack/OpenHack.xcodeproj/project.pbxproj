@@ -16,6 +16,7 @@
 		8C21997F1A7CF46B009CBE6B /* Square.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C21997E1A7CF46B009CBE6B /* Square.swift */; };
 		8C2199811A7CF46F009CBE6B /* SquareLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2199801A7CF46F009CBE6B /* SquareLabel.swift */; };
 		8C2199831A7CF47E009CBE6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2199821A7CF47E009CBE6B /* ViewController.swift */; };
+		8C69E94D1A7CF641006BD6E3 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C69E94C1A7CF641006BD6E3 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		8C21997E1A7CF46B009CBE6B /* Square.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Square.swift; sourceTree = "<group>"; };
 		8C2199801A7CF46F009CBE6B /* SquareLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareLabel.swift; sourceTree = "<group>"; };
 		8C2199821A7CF47E009CBE6B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8C69E94C1A7CF641006BD6E3 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				8C21995C1A7CF448009CBE6B /* AppDelegate.swift */,
+				8C69E94C1A7CF641006BD6E3 /* Player.swift */,
 				8C21997C1A7CF464009CBE6B /* Board.swift */,
 				8C2199601A7CF448009CBE6B /* Main.storyboard */,
 				8C2199821A7CF47E009CBE6B /* ViewController.swift */,
@@ -225,6 +228,7 @@
 				8C21997F1A7CF46B009CBE6B /* Square.swift in Sources */,
 				8C21995D1A7CF448009CBE6B /* AppDelegate.swift in Sources */,
 				8C2199811A7CF46F009CBE6B /* SquareLabel.swift in Sources */,
+				8C69E94D1A7CF641006BD6E3 /* Player.swift in Sources */,
 				8C21997D1A7CF464009CBE6B /* Board.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,6 +421,7 @@
 				8C2199781A7CF448009CBE6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8C2199791A7CF448009CBE6B /* Build configuration list for PBXNativeTarget "OpenHackTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +430,7 @@
 				8C21997B1A7CF448009CBE6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

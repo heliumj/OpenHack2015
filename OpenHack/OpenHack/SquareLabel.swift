@@ -27,19 +27,19 @@ class SquareLabel : UIButton {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func getLabelText() -> String {
-        // check the isMineLocation and numNeighboringMines properties to determine the text to display
-        if !self.square.isMineLocation {
-            if self.square.numNeighboringMines == 0 {
-                // case 1: there's no mine and no neighboring mines
-                return ""
-            }else {
-                // case 2: there's no mine but there are neighboring mines
-                return "\(self.square.numNeighboringMines)"
-            }
-        }
-        // case 3: there's a mine
-        return "M"
-    }
+//    func getLabelText() -> String {
+//        // check the isMineLocation and numNeighboringMines properties to determine the text to display
+//        if !self.square.isMineLocation {
+//            if self.square.numNeighboringMines == 0 {
+//                // case 1: there's no mine and no neighboring mines
+//                return ""
+//            }else {
+//                // case 2: there's no mine but there are neighboring mines
+//                return "\(self.square.numNeighboringMines)"
+//            }
+//        }
+//        // case 3: there's a mine
+//        return "M"
+//    }
     
 }

@@ -24,6 +24,7 @@ class ViewController: UIViewController {
         }
     }
     
+    var players :[Player] = []
     
     //MARK: Initialization
     
@@ -62,21 +63,7 @@ class ViewController: UIViewController {
         }
     }
     
-    func updateBoard() {
-        // see who's turn it is
-        // get that player's location
-        // redraw
-        
-        // resets the board with new mine locations & sets isRevealed to false for each square
-        self.board.resetBoard()
-        // iterates through each button and resets the text to the default value
-        for squareLabel in self.squareLabels {
-                squareLabel.setTitle("  ", forState: .Normal)
-        }
-        self.squareLabels[0].setTitle(" O ", forState: .Normal)
-        self.squareLabels[(board.size)*(board.size)-1].setTitle(" O ", forState: .Normal)
 
-    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -85,11 +72,24 @@ class ViewController: UIViewController {
     
     func startNewGame(){
         // Initialize Players
-        // Define Grids
-        // intialize turnCounter
-        self.updateBoard()
+        let player1 = Player(row:0, col:0)
+        let player2 = Player(row:board.size, col:board.size)
+        players.append(player1)
+        players.append(player2)
 
         takeTurn()
+    }
+    
+    func updateBoard() {
+        
+        // iterates through each button and resets the text to the default value
+        for squareLabel in self.squareLabels {
+            squareLabel.setTitle("  ", forState: .Normal)
+        }
+        // see who's turn it is
+        // get that player's location
+        // redraw
+        self.squareLabels[(players[turns%2].row+players[turns%2].col*board.size)].setTitle(" O ", forState: .Normal)
     }
     
     func takeTurn(){
@@ -116,6 +116,7 @@ class ViewController: UIViewController {
         // alert on screen
     }
 
+    
     //MARK: Button Actions
     
 //    @IBAction func newGamePressed() {
@@ -140,10 +141,10 @@ class ViewController: UIViewController {
     
 
     
-    func alertView(View: UIAlertView!, clickedButtonAtIndex buttonIndex: Int) {
-        //start new game when the alert is dismissed
-        self.startNewGame()
-    }
+//    func alertView(View: UIAlertView!, clickedButtonAtIndex buttonIndex: Int) {
+//        //start new game when the alert is dismissed
+//        self.startNewGame()
+//    }
     
     
     
