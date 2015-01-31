@@ -15,7 +15,7 @@ class GameScene: SKScene {
         // Draw the board
         drawBoard()
         // Add a game piece to the board
-        if let square = squareWithName("a1") {
+        /* if let square = squareWithName("a1") {
             let gamePiece = SKSpriteNode(imageNamed: "Spaceship")
             gamePiece.size = CGSizeMake(24, 24)
             square.addChild(gamePiece)
@@ -24,7 +24,7 @@ class GameScene: SKScene {
             let gamePiece = SKSpriteNode(imageNamed: "Spaceship")
             gamePiece.size = CGSizeMake(24, 24)
             square.addChild(gamePiece)
-        }
+        } */
     }
     func drawBoard() {
         // Board parameters
