@@ -17,6 +17,7 @@
 		8C2199811A7CF46F009CBE6B /* SquareLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2199801A7CF46F009CBE6B /* SquareLabel.swift */; };
 		8C2199831A7CF47E009CBE6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2199821A7CF47E009CBE6B /* ViewController.swift */; };
 		8C69E94D1A7CF641006BD6E3 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C69E94C1A7CF641006BD6E3 /* Player.swift */; };
+		F6209FE51A7D3213006D9355 /* Grid.png in Resources */ = {isa = PBXBuildFile; fileRef = F6209FE41A7D3213006D9355 /* Grid.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		8C2199801A7CF46F009CBE6B /* SquareLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareLabel.swift; sourceTree = "<group>"; };
 		8C2199821A7CF47E009CBE6B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8C69E94C1A7CF641006BD6E3 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		F6209FE41A7D3213006D9355 /* Grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Grid.png; path = ../../../../../Grid.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				8C21997C1A7CF464009CBE6B /* Board.swift */,
 				8C2199601A7CF448009CBE6B /* Main.storyboard */,
 				8C2199821A7CF47E009CBE6B /* ViewController.swift */,
+				F6209FE41A7D3213006D9355 /* Grid.png */,
 				8C21997E1A7CF46B009CBE6B /* Square.swift */,
 				8C2199801A7CF46F009CBE6B /* SquareLabel.swift */,
 				8C2199631A7CF448009CBE6B /* Images.xcassets */,
@@ -205,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C2199621A7CF448009CBE6B /* Main.storyboard in Resources */,
+				F6209FE51A7D3213006D9355 /* Grid.png in Resources */,
 				8C2199671A7CF448009CBE6B /* LaunchScreen.xib in Resources */,
 				8C2199641A7CF448009CBE6B /* Images.xcassets in Resources */,
 			);

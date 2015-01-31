@@ -1,9 +1,9 @@
 //
 //  Board.swift
-//  Mineswifter
+//  OpenHack
 //
-//  Created by Benjamin Reynolds on 7/27/14.
-//  Copyright (c) 2014 MakeGamesWithUs. All rights reserved.
+//  Created by Eric Ma on 7/27/14.
+//  Copyright (c) 2015 ECHA. All rights reserved.
 //
 
 import Foundation

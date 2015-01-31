@@ -1,9 +1,9 @@
 //
 //  ViewController.swift
-//  Mineswifter
+//  OpenHack
 //
-//  Created by Benjamin Reynolds on 7/26/14.
-//  Copyright (c) 2014 MakeGamesWithUs. All rights reserved.
+//  Created by Eric Ma on 7/26/14.
+//  Copyright (c) 2015 ECHA. All rights reserved.
 //
 
 import UIKit
@@ -19,7 +19,13 @@ class ViewController: UIViewController {
     
     var turns:Int = 0 {
         didSet {
-            self.turnsLabel.text = "Turns: \(turns)"
+            if (turns % 2 == 1) {
+                self.turnsLabel.text = "Player 1 Turn: \((turns + 1) / 2)"
+            }
+            else {
+                self.turnsLabel.text = "Player 2 Turn : \(turns / 2)"}
+            
+            
             self.turnsLabel.sizeToFit()
         }
     }
@@ -193,12 +199,32 @@ class ViewController: UIViewController {
             gameOver()
         } else {
             //alert for distance
+            var alert = UIAlertController(title: "Distance", message: "\(distance)", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
         }
     }
     
+    // time up
+    func timeUp () {
+        
+        if (turns >= 30) {
+        // player 2 (runner) wins
+        var alert = UIAlertController(title: "Time up!", message: "Player 2 wins", preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
+            
+        pause()
+}
+    }
+
     func gameOver() {
         //alert
-        pause()
+
+        var alert = UIAlertController(title: "Game over", message: "Player 1 wins", preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
+
     }
 
     
