@@ -9,10 +9,15 @@
 /* Begin PBXBuildFile section */
 		F67C38A11A7C7BCA006B5F02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67C38A01A7C7BCA006B5F02 /* AppDelegate.swift */; };
 		F67C38A31A7C7BCA006B5F02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67C38A21A7C7BCA006B5F02 /* ViewController.swift */; };
-		F67C38A61A7C7BCA006B5F02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F67C38A41A7C7BCA006B5F02 /* Main.storyboard */; };
 		F67C38A81A7C7BCA006B5F02 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F67C38A71A7C7BCA006B5F02 /* Images.xcassets */; };
 		F67C38AB1A7C7BCA006B5F02 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F67C38A91A7C7BCA006B5F02 /* LaunchScreen.xib */; };
 		F67C38B71A7C7BCB006B5F02 /* OpenHack_2015Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67C38B61A7C7BCB006B5F02 /* OpenHack_2015Tests.swift */; };
+		F67C38C11A7C8844006B5F02 /* InstructionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F67C38C01A7C8844006B5F02 /* InstructionView.xib */; };
+		F67C38C31A7C887F006B5F02 /* GridView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F67C38C21A7C887F006B5F02 /* GridView.xib */; };
+		F67C38C51A7C8896006B5F02 /* ResultView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F67C38C41A7C8896006B5F02 /* ResultView.xib */; };
+		F67C38C71A7C8B5B006B5F02 /* InstructionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67C38C61A7C8B5B006B5F02 /* InstructionViewController.swift */; };
+		F67C38C91A7C8BEA006B5F02 /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67C38C81A7C8BEA006B5F02 /* GridViewController.swift */; };
+		F67C38CB1A7C8D07006B5F02 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67C38CA1A7C8D07006B5F02 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,12 +35,17 @@
 		F67C389F1A7C7BCA006B5F02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F67C38A01A7C7BCA006B5F02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F67C38A21A7C7BCA006B5F02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F67C38A51A7C7BCA006B5F02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F67C38A71A7C7BCA006B5F02 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F67C38AA1A7C7BCA006B5F02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F67C38B01A7C7BCB006B5F02 /* OpenHack 2015Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OpenHack 2015Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F67C38B51A7C7BCB006B5F02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F67C38B61A7C7BCB006B5F02 /* OpenHack_2015Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenHack_2015Tests.swift; sourceTree = "<group>"; };
+		F67C38C01A7C8844006B5F02 /* InstructionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = InstructionView.xib; path = ../InstructionView.xib; sourceTree = "<group>"; };
+		F67C38C21A7C887F006B5F02 /* GridView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GridView.xib; path = ../GridView.xib; sourceTree = "<group>"; };
+		F67C38C41A7C8896006B5F02 /* ResultView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ResultView.xib; path = ../ResultView.xib; sourceTree = "<group>"; };
+		F67C38C61A7C8B5B006B5F02 /* InstructionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionViewController.swift; sourceTree = "<group>"; };
+		F67C38C81A7C8BEA006B5F02 /* GridViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridViewController.swift; sourceTree = "<group>"; };
+		F67C38CA1A7C8D07006B5F02 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +89,14 @@
 			children = (
 				F67C38A01A7C7BCA006B5F02 /* AppDelegate.swift */,
 				F67C38A21A7C7BCA006B5F02 /* ViewController.swift */,
-				F67C38A41A7C7BCA006B5F02 /* Main.storyboard */,
 				F67C38A71A7C7BCA006B5F02 /* Images.xcassets */,
 				F67C38A91A7C7BCA006B5F02 /* LaunchScreen.xib */,
+				F67C38C01A7C8844006B5F02 /* InstructionView.xib */,
+				F67C38C61A7C8B5B006B5F02 /* InstructionViewController.swift */,
+				F67C38C21A7C887F006B5F02 /* GridView.xib */,
+				F67C38C81A7C8BEA006B5F02 /* GridViewController.swift */,
+				F67C38C41A7C8896006B5F02 /* ResultView.xib */,
+				F67C38CA1A7C8D07006B5F02 /* ResultViewController.swift */,
 				F67C389E1A7C7BCA006B5F02 /* Supporting Files */,
 			);
 			path = "OpenHack 2015";
@@ -192,9 +207,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F67C38A61A7C7BCA006B5F02 /* Main.storyboard in Resources */,
 				F67C38AB1A7C7BCA006B5F02 /* LaunchScreen.xib in Resources */,
 				F67C38A81A7C7BCA006B5F02 /* Images.xcassets in Resources */,
+				F67C38C51A7C8896006B5F02 /* ResultView.xib in Resources */,
+				F67C38C11A7C8844006B5F02 /* InstructionView.xib in Resources */,
+				F67C38C31A7C887F006B5F02 /* GridView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +229,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F67C38CB1A7C8D07006B5F02 /* ResultViewController.swift in Sources */,
+				F67C38C91A7C8BEA006B5F02 /* GridViewController.swift in Sources */,
+				F67C38C71A7C8B5B006B5F02 /* InstructionViewController.swift in Sources */,
 				F67C38A31A7C7BCA006B5F02 /* ViewController.swift in Sources */,
 				F67C38A11A7C7BCA006B5F02 /* AppDelegate.swift in Sources */,
 			);
@@ -236,14 +256,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F67C38A41A7C7BCA006B5F02 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F67C38A51A7C7BCA006B5F02 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F67C38A91A7C7BCA006B5F02 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
