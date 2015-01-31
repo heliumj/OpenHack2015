@@ -20,6 +20,8 @@
 		F6209FE71A7D3681006D9355 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = F6209FE61A7D3681006D9355 /* Background.png */; };
 		F6209FEB1A7D5053006D9355 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6209FEA1A7D5053006D9355 /* Main.storyboard */; };
 		F6209FEF1A7D6122006D9355 /* LastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6209FEE1A7D6122006D9355 /* LastViewController.swift */; };
+		F6A683D51A7D87B900515502 /* Background_lastView.png in Resources */ = {isa = PBXBuildFile; fileRef = F6A683D41A7D87B900515502 /* Background_lastView.png */; };
+		F6A683D71A7D8AE700515502 /* Background_Instruction.png in Resources */ = {isa = PBXBuildFile; fileRef = F6A683D61A7D8AE700515502 /* Background_Instruction.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		F6209FE61A7D3681006D9355 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Background.png; path = ../../../../../Background.png; sourceTree = "<group>"; };
 		F6209FEA1A7D5053006D9355 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F6209FEE1A7D6122006D9355 /* LastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LastViewController.swift; sourceTree = "<group>"; usesTabs = 0; };
+		F6A683D41A7D87B900515502 /* Background_lastView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Background_lastView.png; path = ../../../../../Background_lastView.png; sourceTree = "<group>"; };
+		F6A683D61A7D8AE700515502 /* Background_Instruction.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Background_Instruction.png; path = ../../../../../Background_Instruction.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +105,10 @@
 				8C2199821A7CF47E009CBE6B /* ViewController.swift */,
 				F6209FEE1A7D6122006D9355 /* LastViewController.swift */,
 				8C2199631A7CF448009CBE6B /* Images.xcassets */,
-				F6209FE61A7D3681006D9355 /* Background.png */,
+				F6A683D61A7D8AE700515502 /* Background_Instruction.png */,
 				F6209FE41A7D3213006D9355 /* Grid.png */,
+				F6209FE61A7D3681006D9355 /* Background.png */,
+				F6A683D41A7D87B900515502 /* Background_lastView.png */,
 				8C21995A1A7CF448009CBE6B /* Supporting Files */,
 			);
 			path = OpenHack;
@@ -213,7 +219,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6A683D71A7D8AE700515502 /* Background_Instruction.png in Resources */,
 				F6209FE51A7D3213006D9355 /* Grid.png in Resources */,
+				F6A683D51A7D87B900515502 /* Background_lastView.png in Resources */,
 				F6209FE71A7D3681006D9355 /* Background.png in Resources */,
 				F6209FEB1A7D5053006D9355 /* Main.storyboard in Resources */,
 				8C2199671A7CF448009CBE6B /* LaunchScreen.xib in Resources */,

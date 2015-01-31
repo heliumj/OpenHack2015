@@ -208,7 +208,7 @@ class ViewController: UIViewController {
         }
         else {
             //alert for distance
-            var alert = UIAlertController(title: "Distance", message: "\(distance)", preferredStyle: UIAlertControllerStyle.Alert)
+            var alert = UIAlertController(title: "Distance", message: "\(distance) grids, now it's the other player's turn :)", preferredStyle: UIAlertControllerStyle.Alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
             self.presentViewController(alert, animated: true, completion: nil)
         }
