@@ -26,6 +26,8 @@ class ViewController: UIViewController {
     
     var players :[Player] = []
     
+    var portals : [Int:Int] = [13:32,87:46]
+    
     //MARK: Initialization
     
     required init(coder aDecoder: NSCoder)
@@ -89,6 +91,11 @@ class ViewController: UIViewController {
         // see who's turn it is
         // get that player's location
         // redraw
+        for (oneEnd,Another) in portals {
+            self.squareLabels[oneEnd].setTitle(" # ", forState: .Normal)
+            self.squareLabels[Another].setTitle(" * ", forState: .Normal)
+
+        }
         self.squareLabels[(players[turns%2].row+players[turns%2].col*board.size)].setTitle(" O ", forState: .Normal)
     }
     
@@ -97,23 +104,46 @@ class ViewController: UIViewController {
         // wait for swipe
     }
     
-    func OnSwipe() {
-        // decide who's turn
+    //four swipe input handler with boundry check
+    
+    // decide who's turn and call the corresponding move
+
+    
+    func OnSwiped() {
         //player.Move();
         checkTeleport();
+        updateBoard();
         calculateDistance();
         turns++;
         takeTurn();
     }
     
     func checkTeleport(){
-        // Do nothing for now
+        for (oneEnd,Another) in portals {
+            for player in players {
+                if (player.row + player.col*board.size == oneEnd){
+                    player.row = Another%board.size
+                    player.col = Another/board.size
+                }
+            }
+        }
     }
     
     func calculateDistance() {
         // Calculate distance
-        // if 0, gameOver()
-        // alert on screen
+        let rowDistance = abs(players[0].row - players[1].row)
+        let colDistance = abs(players[0].col - players[1].col)
+        let distance = rowDistance + colDistance
+
+        if (distance == 0){
+            gameOver()
+        } else {
+            //alert for distance
+        }
+    }
+    
+    func gameOver() {
+    
     }
 
     

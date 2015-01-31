@@ -9,8 +9,9 @@
 import Foundation
 
 class Player {
-    let row:Int
-    let col:Int
+    var row:Int
+    var col:Int
+    
     
     init(row:Int,col:Int) {
         self.row = row
@@ -18,19 +19,19 @@ class Player {
     }
     
     func moveRight(){
-        
+        row++
     }
     
     func moveLeft(){
-        
+        row--
     }
     
     func moveUp(){
-        
+        col--
     }
     
     func moveDown(){
-        
+        col++
     }
     
     
