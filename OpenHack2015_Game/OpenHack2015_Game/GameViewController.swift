@@ -104,5 +104,51 @@ class GameViewController: UIViewController {
             }
         }
     }
+    
+    class Player
+    // initiate coordinates
+    var corX: Int
+    var corY: Int
+    
+    // movement
+    
+    func moveRight (){
+        if (corX+1)<8  { // teleport implementation
+            corX=corX+1
+        }
+        else {
+            // play warning
+        }
+    
+    func moveLeft (){
+        if (corX-1)>0  { // teleport implementation
+            corX=corX-1
+        }
+        else {
+            // play warning
+        }
+    
+    func moveUp (){
+        if (corY+1)<8  { // teleport implementation
+            corY=corY+1
+        }
+        else {
+            // play warning
+        }
+    
+    func moveDown (){
+        if (corY-1)>0  { // teleport implementation
+            corY=corY-1
+        }
+        else {
+            // play warning
+        }
+    
+    func distance(corX
+
+
+    
+        )
+    }
 }
 
