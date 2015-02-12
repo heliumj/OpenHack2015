@@ -1,15 +1,15 @@
 //
-//  OpenHack_2015Tests.swift
-//  OpenHack 2015Tests
+//  OpenHackTests.swift
+//  OpenHackTests
 //
-//  Created by He Jiang on 1/30/15.
-//  Copyright (c) 2015 Team ECHA. All rights reserved.
+//  Created by Eric MA on 31/1/15.
+//  Copyright (c) 2015 ECHA. All rights reserved.
 //
 
 import UIKit
 import XCTest
 
-class OpenHack_2015Tests: XCTestCase {
+class OpenHackTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

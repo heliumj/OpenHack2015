@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  OpenHack 2015
+//  OpenHack
 //
-//  Created by He Jiang on 1/30/15.
-//  Copyright (c) 2015 Team ECHA. All rights reserved.
+//  Created by Eric MA on 31/1/15.
+//  Copyright (c) 2015 ECHA. All rights reserved.
 //
 
 import UIKit
